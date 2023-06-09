@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kZypA6tSdFPMf1ibdT7kXyW5qUfBKLz3W-5Vqf_B7TedYz6hENR9OODUGY6jGzcE9BI&usqp=CAU" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <li><a href="">Simple Music Player </a></li>
+        </div>
+    </nav>
+    <!--Music Player Structure-->
+      <div class="player-card">
+          <img src="" alt="Music image">
+            <h2></h2>
+            <p></p>
+          <div class="player-controls">
+              <audio id="audio-player" >
+              <source src="" type="audio/mpeg">
+            </audio>
+            <div id="progress-container">
+              <input id="progress-bar" type="range" min="0" value="0">
+               <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+            </div>
+            <div class="buttons">
+              <button id="prev-button" class="control-button"><i class="bi bi-skip-backward-fill"></i></button>
+              <button id="playpause-button" class="control-button"><i class="bi bi-play-fill"></i></button>
+              <button id="next-button" class="control-button"><i class="bi bi-fast-forward-fill"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!--Script link-->
+  <script src="index.js"></script>
+</body>
+</html>
+<!--1366 x 639-->
