@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,93.3,300..800;1,93.3,300..800&display=swap');
+
 body {
   display: flex;
   justify-content: center;
@@ -13,6 +15,7 @@ nav{
   top: 0;
   left: 0;
   height: 81px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.459);
 }
 .navbar-content {
   display: flex;
@@ -119,4 +122,36 @@ img {
     line-height: 1.2;
   }
   
+}
+
+@media screen and (max-width:700px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    height: auto;
+    margin: 0;
+    background-color: #663c3c;
+    font-family: "Open Sans", sans-serif;
+    
+  }
+  .player-card{
+    background-color: white;
+    height: auto;
+    padding: 1rem;
+    width: 360px;
+  }
+  .player-card h2{
+    padding-top: 8px;
+  }
+  
+  #progress-bar{
+    height: 5px;
+  }
+  .control-button{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    color: rgb(12, 10, 9);
+  }
 }
